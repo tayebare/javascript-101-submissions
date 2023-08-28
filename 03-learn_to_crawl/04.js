@@ -20,6 +20,29 @@
  * that is demonstrated below. For the labels, be sure to come up 
  * with clear and descriptive names.
  */
+let x = 1234;
+let y = 23571;
+let p = 98768823;
+let luckyNumber = 7;
+let sumOfAll = x+y+p;
+console.log(sumOfAll);
+let largestLessOthers = p-(x+y);
+console.log(largestLessOthers);
+let productOfAll = x*y*p;
+console.log(productOfAll);
+let division = p/(y-x);
+console.log(division);
+let xMod7 = x%luckyNumber;
+let yMod7 = y%luckyNumber;
+let pMod7 = p%luckyNumber;
+console.log("The numbers mod 7:", xMod7, yMod7, pMod7);
+
+console.log("Sum of all three:", sumOfAll);
+console.log("Largest less the others:", largestLessOthers);
+console.log("Product of all three:", productOfAll);
+console.log("Largest divided by difference between the other two:", division);
+console.log("The numbers modulo 7:", xMod7, yMod7, pMod7);
+
 
 let result = 0
 console.log("Label", result)

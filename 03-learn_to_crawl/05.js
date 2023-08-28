@@ -25,3 +25,21 @@
  * support for it is not everywhere.
  */
 
+/* Task 1*/
+let myName = "Terence";
+let greeting = "Good day to you!";
+let friendName = "Nick";
+let familyName = "Zonzo";
+let dateNumber = "28";
+let dateMonth = "August";
+let dateYear = "2023";
+let myAge = "42";
+
+/*Task 2*/
+let greetFriend = "Hello " + friendName + ", " + greeting;
+let greetFamily = `Hi ${familyName}, ${greeting}`;
+let tellDayAndMonth = `Hi ${friendName}, today's date is the ${dateNumber}th of ${dateMonth}.`;
+let ageIn20 = `In 20 years, I will be ${+myAge + 20} years old.`;
+
+/*I certainly prefer interpolation by far; what a shame it won't work in every case; it feels intuitive and efficient!
+
