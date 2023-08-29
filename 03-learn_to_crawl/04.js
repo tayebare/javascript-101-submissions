@@ -44,5 +44,3 @@ console.log("Largest divided by difference between the other two:", division);
 console.log("The numbers modulo 7:", xMod7, yMod7, pMod7);
 
 
-let result = 0
-console.log("Label", result)

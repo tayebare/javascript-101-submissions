@@ -36,10 +36,9 @@ let dateYear = "2023";
 let myAge = "42";
 
 /*Task 2*/
-let greetFriend = "Hello " + friendName + ", " + greeting;
-let greetFamily = `Hi ${familyName}, ${greeting}`;
-let tellDayAndMonth = `Hi ${friendName}, today's date is the ${dateNumber}th of ${dateMonth}.`;
-let ageIn20 = `In 20 years, I will be ${+myAge + 20} years old.`;
+console.log("Hello " + friendName + ", " + greeting);
+console.log(`Hi ${familyName}, ${greeting}`);
+console.log(`Hi ${friendName}, today's date is the ${dateNumber}th of ${dateMonth}.`);
+console.log(`In 20 years, I will be ${+myAge + 20} years old.`);
 
-/*I certainly prefer interpolation by far; what a shame it won't work in every case; it feels intuitive and efficient!
-
+/*I certainly prefer interpolation by far; what a shame it won't work in every case; it feels intuitive and efficient!*/
