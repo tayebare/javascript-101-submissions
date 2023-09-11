@@ -1,6 +1,6 @@
-function getRandomNumber(){
+/*function getRandomNumber(){
     return Math.floor((Math.random() * 10) + 1);
-}
+}*/
 
 /**
  * The function above is a random number generator. It generates a number
@@ -40,7 +40,65 @@ function getRandomNumber(){
  *
  */
 
-let randomNumber = getRandomNumber() + getRandomNumber()
+function getRandomNumber(){
+    return Math.floor((Math.random() * 100));
+}
 
-console.log(randomNumber)
+/*The probability of picking a number between 1 and 10 is 0.1.*/
+let luckyChance = function(){
+    return Math.floor(Math.random() * 10 + 1);
+}
+
+let age = getRandomNumber();
+let price  = "0";
+let fare = ("");
+let under5Fare = "0";
+let btn5And13Fare = "2.50";
+let teenFare = "3.25";
+let youngPersonFare = "3.75";
+let adultFare = "4.00";
+let pensionerFare = "2.75";
+
+if(age < 5){
+    price = under5Fare;
+    console.log(`Under 5s go free!`);
+}
+
+else{
+
+if(luckyChance != 10){
+    if(age < 13){
+        price = btn5And13Fare;
+        console.log(`Please pay a child's fare of £${btn5And13Fare} for your journey`);
+
+        } else if(age >=13 && age <21){
+   price = teenFare;
+    console.log(`Please pay a teenager's fare of £${teenFare} for your journey`);
+} else if(age >= 21 && age < 30){
+     price = youngPersonFare;
+    console.log(`Please pay the young adult's fare of £${youngPersonFare} for your journey`);
+} else if (age >= 30 && age <= 65){
+    price = adultFare;
+    console.log(`Please pay the adult's fare of £${adultFare} for your journey`);
+} else {
+    price = pensionerFare;
+    console.log(`Please pay the pensioner's fare of £${pensionerFare} for your journey`);
+}
+}
+else if(luckyChance == 10){
+    console.log(`Lucky you! Today you get to ride free of charge.`);
+}
+}
+
+/*THIS IS NOT WORKING YET!! To check whether 1 in 10 chance is implemented:*/
+console.log(`${age}, ${luckyChance()}.`);
+
+
+
+    
+
+
+
+
+
 

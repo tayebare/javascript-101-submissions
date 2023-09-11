@@ -22,6 +22,64 @@
 
 // Write your code here:
 
+/* Kelvin to Celcius*/
+let degK = null;
+function KtoC (degK){
+    let degC = degK - 273.15;
+    return degC;
+}
+
+/*Celcius to Kelvin*/
+let CtoK = function(degC){
+    degK = degC + 273.15;
+    return degK;
+}
+
+/*Fahrenheit to Kelvin*/
+let FtoK = function(degF){
+degK = (5/9)*(degF - 32) + 273.15;
+return degK;
+}
+
+/*Kelvin to Fahrenheit*/
+let KtoF = function(degK){
+    degF = (9/5) * (degK - 273.15) + 32;
+    return degF;
+}
+
+/*Pythagoras*/
+let pythagoras = function (x, y){
+    let hypotenuse = Math.sqrt(x**2 + y**2);
+    return hypotenuse;
+}
+
+/*Inches to cm*/
+let inchesLength = null;
+let inchToCm = function(inchesLength){
+let cmLength = inchesLength * 2.54;
+return cmLength;
+}
+
+/*cm to inches*/
+let CmToInch = function(cmLength){
+    inchesLength = cmLength / 2.54;
+    return inchesLength;
+}
+
+/*miles to km*/
+let miles = null;
+let MToKm = function(miles){
+    let km = miles * 1.6;
+    return km;
+}
+
+/*km to miles*/
+let KmToM = function(km){
+    miles = km/1.6;
+    return miles;
+}
+
+
 
 
 
